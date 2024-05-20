@@ -1,0 +1,242 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+}
+/* common */
+
+.Btn-Fast-hover {
+  color: white;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 4px;
+  z-index: 0;
+  background: white;
+  overflow: hidden;
+  border: 2px solid #135d66;
+  color: #135d66;
+}
+.Btn-Fast-hover:hover {
+  color: white;
+}
+.Btn-Fast-hover:hover:after {
+  width: 100%;
+}
+.Btn-Fast-hover:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s linear;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #135d66;
+}
+
+/* Btn-Fast-hover-end */
+
+.Btn-Second-hover {
+  color: white;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 4px;
+  z-index: 0;
+  background: white;
+  overflow: hidden;
+  border: 2px solid #0a0a0ab6;
+  color: #0a0a0ab6;
+}
+.Btn-Second-hover:hover {
+  color: white;
+}
+.Btn-Second-hover:hover:after {
+  width: 100%;
+}
+.Btn-Second-hover:after {
+  padding: 0px 20px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s linear;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #0a0a0ab6;
+}
+
+/* Btn-Second-hover-end */
+.seeCourseRegister {
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 3px 3px 3px 0px rgba(255, 255, 255, 0.5),
+    8px 8px 21px 0px rgba(0, 0, 0, 0.1), 5px 5px 6px 0px rgba(0, 0, 0, 0.1);
+  background: #04242c;
+  z-index: 1;
+}
+.seeCourseRegister:hover:after {
+  width: 100%;
+  left: 0;
+}
+.seeCourseRegister:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 3px 3px 3px 0px rgba(255, 255, 255, 0.233),
+    8px 8px 21px 0px rgba(0, 0, 0, 0.1), 5px 5px 6px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s linear;
+  background-color: #9bbec8;
+  right: 0;
+}
+.seeCourseRegister:active {
+  top: 2px;
+}
+
+/* See More Courses-Register-now-end */
+
+/* check-out-btn */
+.checkOut-btns {
+  text-transform: uppercase;
+  padding: 0px;
+  font-size: 10px;
+  font-weight: 300;
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  padding: 4px 6px;
+  margin: 0px 10px;
+  border-radius: 6px;
+}
+.checkOut-btns:hover {
+  background-color: #04242c;
+  color: white;
+}
+/* check-out-btn */
+/* common */
+
+/* Animation-Button  */
+
+.Animation-Button {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.Animation-Button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #3b1c1cc3,
+    #ff7300e8,
+    #5c5b30c9,
+    #49fb03b2,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: hireme 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  border-radius: 10px;
+}
+
+.Animation-Button:active {
+  color: #000;
+}
+
+.Animation-Button:active:after {
+  background: transparent;
+}
+
+.Animation-Button:before {
+  opacity: 1;
+}
+
+.Animation-Button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes hireme {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Animation-button  */
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.Navbar-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 5;
+  background: linear-gradient(50deg, #135d66 50%, #9bbec8 50%, Transparent);
+  background-color: rgb(3, 3, 3);
+}
+.bg-ImgCover {
+  background: url(images/Bg-cover.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%;
+  /* width: 100%; */
+  height: 80vh;
+}
