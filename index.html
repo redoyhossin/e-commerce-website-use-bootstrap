@@ -10,6 +10,11 @@
         favicon 
     ---------------------->
     <link rel="shortcut icon" href="*" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="images/Online-academi.png"
+      type="image/x-icon"
+    />
 
     <!------------- 
         favicon 
@@ -83,7 +88,7 @@
                     <a
                       class="nav-link fs- 4 mx-2 fw-bold text-white"
                       aria-current="page"
-                      href="index.html"
+                      href="#"
                       >Home</a
                     >
                   </li>
@@ -142,13 +147,13 @@
             class="bg-ImgCover d-flex justify-content-around align-items-center"
           >
             <div>
-              <h1 class="text-white">All Services</h1>
+              <h1 class="text-white">Online-academi</h1>
               <button class="Animation-Button">Get Started</button>
             </div>
           </div>
         </section>
         <!-------------------------
-        header-bg-ImgCover end
+        header-bg-ImgCover end 
    ------------------------>
 
         <!--------------------------
@@ -158,7 +163,7 @@
         <section class="container">
           <div
             id="carouselExampleCaptions"
-            class="carousel slide mt-5"
+            class="carousel slide carousel-style"
             data-bs-ride="false"
           >
             <div class="carousel-inner">
@@ -177,8 +182,8 @@
                   </h3>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Debitis sapiente similique <br> consequuntur, quod voluptates
-                    dignissimos!
+                    Debitis sapiente similique <br />
+                    consequuntur, quod voluptates dignissimos!
                   </p>
                   <button type="button" class="btn Animation-Button">
                     Get Started
@@ -200,8 +205,8 @@
                   </h3>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Debitis sapiente similique <br> consequuntur, quod voluptates
-                    dignissimos!
+                    Debitis sapiente similique <br />
+                    consequuntur, quod voluptates dignissimos!
                   </p>
                   <button type="button" class="btn Animation-Button">
                     Get Starteds
@@ -222,8 +227,8 @@
                   </h3>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Debitis sapiente similique <br> consequuntur, quod voluptates
-                    dignissimos!
+                    Debitis sapiente similique <br />
+                    consequuntur, quod voluptates dignissimos!
                   </p>
                   <button type="button" class="btn Animation-Button">
                     Get Starteds
@@ -509,12 +514,31 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <form
+                <!-- <form
+
                   method="post"
                   action="mailto:example"
                   enctype="text/plain"
                   class="was-validate"
                 >
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label"
+                      >email:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="recipient-name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"
+                      >Message:</label
+                    >
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form> -->
+                <form>
                   <div class="mb-3">
                     <label for="recipient-name" class="col-form-label"
                       >email:</label
@@ -551,7 +575,7 @@
         <!-- modal -->
 
         <section>
-          <div class="link-btn mt-5 py-5 fw-bolder container">
+          <div class="link-btn mt-4 fw-bolder container">
             <div class="text-center">
               <a type="button" class="btn seeCourseRegister d-none d-lg-inline">
                 See More Courses
@@ -568,60 +592,6 @@
                 ----------------------- -->
 
       <aside>
-        <!--------------------
-                 Register section state 
-                 -------------------------------->
-        <section class="container" id="Register">
-          <div
-            class="row bg-primary py-5 align-items-center mt-5 mb-5 rounded text-center text-lg-start"
-          >
-            <div class="col-lg-6 text-light px-5">
-              <p class="h1">Ready to join?</p>
-              <br />
-              <p class="#">
-                Our team of friendly instructors and staff is motivated and
-                committed to helping all of our students. If you are interested
-                in joining our talented team of education professionals, please
-                visit...
-              </p>
-            </div>
-
-            <div class="col-lg-3 ms-auto px-4">
-              <button
-                class="btn seeCourseRegister"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#RegisterCanvas"
-                aria-controls="offcanvasBottom"
-              >
-                Register Now
-              </button>
-
-              <div
-                class="offcanvas offcanvas-bottom"
-                tabindex="-1"
-                id="RegisterCanvas"
-                aria-labelledby="offcanvasBottomLabel"
-              >
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasBottomLabel">
-                    Offcanvas bottom
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="offcanvas-body"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-------------------
-                 Register section end 
-                ---------------------------->
         <!-----------
                    Blog section state  
                    ----------------------->
@@ -675,6 +645,7 @@
                    Blog section end  
                    ----------------------->
 
+        <!-- Meet Our Successfull Students -->
         <div class="student container" id="Success">
           <div class="student">
             <div class="title">
@@ -754,10 +725,96 @@
             >
           </div>
         </div>
+        <!-- Meet Our Successfull Students end-->
       </aside>
 
-      <!-- student-feedback -->
+      <!--------------------
+                 Register section state 
+                 -------------------------------->
+      <section class="container" id="Register">
+        <div class="d-lg-flex justify-content-around align-items-center g-3">
+          <div class=" text-center mb-4">
+            <div class="mb-4">
+              <img
+                class="w-50 rounded-circle mb-4"
+                src="images/Online-academi.png"
+                alt="siteLogo"
+              />
+              <h3 class="fw-bold fs-2">JOIN US</h3>
+            </div>
 
+            <div>
+              <p class="fs-5">
+                Subscribe Easy Tutorials YouTube Channel To More Videos
+              </p>
+              <button class="Btn-Second-hover">About US</button>
+            </div>
+          </div>
+
+          <div class="RegisterBac">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationCustom01"  required placeholder="">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02"  required placeholder="">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="">
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required placeholder="">
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+            
+              <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required placeholder="">
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required placeholder="">
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-------------------
+                         Register section end 
+                        ---------------------------->
+
+      <!-- student-feedback -->
       <div class="container student-feedback mb-5">
         <div class="text-center my-5 px-5">
           <h1>Some Students Feedback</h1>
@@ -1238,7 +1295,7 @@
       <section class="container">
         <div class="company mt-5 pt-5 d-none d-lg-inline">
           <div class="text-center my-4 px-5">
-            <p class="h1 fw-bold">800+ Companies Are Connected to Us</p>
+            <p class="h1 fw-bold">220+ Companies Are Connected to Us</p>
           </div>
           <div
             class="company-log d-flex align-items-center justify-content-between"

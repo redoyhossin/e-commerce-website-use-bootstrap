@@ -140,7 +140,7 @@
 /* Animation-Button  */
 
 .Animation-Button {
-  width: 220px;
+  width: 289px;
   height: 50px;
   border: none;
   outline: none;
@@ -217,7 +217,11 @@
 }
 
 /* Animation-button  */
-
+/* .carousel-style */
+.carousel-style {
+  margin-top: -2.5rem;
+}
+/* .carousel-style */
 .carousel-item img {
   height: 80vh;
   object-fit: cover;
@@ -239,4 +243,24 @@
   background-position: 60%;
   /* width: 100%; */
   height: 80vh;
+}
+/* RegisterBackground */
+.RegisterBac{
+background-color: rgba(41, 38, 38, 0.185);
+padding: 42px 18px;
+font-weight: 500;
+border-radius: 8px;
+border-left: rgb(0, 0, 0) 8px solid;
+
+}
+/* RegisterBackground */
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+  .Animation-Button {
+    width: 200px;
+  }
+  .carousel-caption {
+    margin-bottom: 6rem;
+  }
 }
