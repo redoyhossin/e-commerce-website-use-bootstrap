@@ -4,6 +4,11 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+/* captionCarousel */
+.captionCarousel{
+  margin-bottom: 10rem;
+}
+/* captionCarousel */
 
 /* common Btn*/
 
@@ -327,7 +332,8 @@
     width: 200px;
   }
   .carousel-caption {
-    margin-bottom: 6rem;
+    margin: 0px;
+    margin-bottom: 10rem;
   }
 
   .RegisterBac {
