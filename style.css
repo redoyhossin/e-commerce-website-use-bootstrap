@@ -266,35 +266,36 @@
 
 /* Cards Animation */
 
-/* .wapper {
+.wapper {
   padding: 10px 10px;
-} */
+}
 
-/* .card-area {
+.card-area {
   padding: 50px 0;
-} */
+}
 
 .box-area {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  gap: 50px;
   /* margin-top: 50px; */
 }
 
 .box {
-  border-radius: 10px;
+  border-radius:16px;
   position: relative;
-  overflow: hidden;
-  box-shadow: 5px 5px 15px #000000af;
+  /* overflow: hidden; */
+  /* box-shadow: 6px 6px 15px #000000; */
+
 }
 .box img {
-  display: block;
+  /* display: block; */
   width: 100%;
   border-radius: 10px;
-  transition: transform 0.5s;
+  transition: transform 0.6s;
 }
 .overly {
-  background: linear-gradient(transparent, rgba(12, 12, 12, 0.938) 58%);
+  background: linear-gradient(transparent, rgba(22, 21, 21, 0.74) 40%);
   position: absolute;
   border-radius: 10px;
   height: 0px;
@@ -308,11 +309,11 @@
   flex-direction: column;
   padding: 0px 40px;
   text-align: center;
-  transition: height 0.5s;
+  transition: height 0.7s;
 }
 
 .box:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .box:hover .overly {
   height: 100%;
