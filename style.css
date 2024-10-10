@@ -271,30 +271,21 @@
 
 /* Cards Animation */
 
-.wapper {
-  padding: 10px 10px;
-}
 
-.card-area {
-  padding: 50px 0;
-}
 
 .box-area {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
-  /* margin-top: 50px; */
 }
 
 .box {
   border-radius:16px;
   position: relative;
-  /* overflow: hidden; */
-  /* box-shadow: 6px 6px 15px #000000; */
+
 
 }
 .box img {
-  /* display: block; */
   width: 100%;
   border-radius: 10px;
   transition: transform 0.6s;
