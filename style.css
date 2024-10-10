@@ -275,4 +275,14 @@ border-left: rgb(0, 0, 0) 8px solid;
   .carousel-caption {
     margin-bottom: 6rem;
   }
+
+  .RegisterBac{
+    background-color: rgba(41, 38, 38, 0.185);
+    padding: 42px 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    border-top: rgb(0, 0, 0) 8px solid;
+    border-left:none;
+    
+    }
 }

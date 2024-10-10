@@ -50,6 +50,10 @@
     <!-- -------
     css link-------
 ------------- -->
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- aos -->
   </head>
 
   <body>
@@ -271,6 +275,7 @@
     <main>
       <section id="Courses" class="container Courses1">
         <div
+          data-aos="zoom-in-down"
           class="my-5 p-3 rounded d-lg-flex justify-content-between align-items-center gap-3 bg-light-subtle"
         >
           <div class="fw-bolder mb-4">
@@ -297,6 +302,7 @@
               class="rounded-4 img-fluid"
               src="images/course/headBanner.jpg"
               alt=""
+              loading="lazy"
             />
           </div>
         </div>
@@ -597,6 +603,7 @@
                    ----------------------->
         <section id="Blog" class="container">
           <div
+            data-aos="fade-left"
             class="d-lg-flex flex-row-reverse justify-content-between align-items-center gap-5 my-4 p-5 rounded-4 bg-body-tertiary"
           >
             <div class="mb-3">
@@ -616,10 +623,12 @@
                 class="rounded-4 img-fluid"
                 src="images/course/freeCourse1.jpg"
                 alt=""
+                loading="lazy"
               />
             </div>
           </div>
           <div
+            data-aos="fade-right"
             class="d-lg-flex justify-content-between align-items-center gap-5 my-4 p-5 rounded-4 bg-secondary-subtle"
           >
             <div class="mb-3">
@@ -637,6 +646,7 @@
                 class="rounded-4 img-fluid"
                 src="images/course/freeCourse2.jpg"
                 alt=""
+                loading="lazy"
               />
             </div>
           </div>
@@ -732,8 +742,12 @@
                  Register section state 
                  -------------------------------->
       <section class="container" id="Register">
-        <div class="d-lg-flex justify-content-around align-items-center g-3">
-          <div class=" text-center mb-4">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          class="d-lg-flex justify-content-around align-items-center g-3"
+        >
+          <div class="text-center mb-4">
             <div class="mb-4">
               <img
                 class="w-50 rounded-circle mb-4"
@@ -754,47 +768,80 @@
           <div class="RegisterBac">
             <form class="row g-3 needs-validation" novalidate>
               <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01"  required placeholder="">
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
+                <label for="validationCustom01" class="form-label"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  required
+                  placeholder=""
+                />
+                <div class="valid-feedback">Looks good!</div>
               </div>
               <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02"  required placeholder="">
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
+                <label for="validationCustom02" class="form-label"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                  required
+                  placeholder=""
+                />
+                <div class="valid-feedback">Looks good!</div>
               </div>
               <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Username</label>
+                <label for="validationCustomUsername" class="form-label"
+                  >Username</label
+                >
                 <div class="input-group has-validation">
-                  
-                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="">
-                  <div class="invalid-feedback">
-                    Please choose a username.
-                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                    placeholder=""
+                  />
+                  <div class="invalid-feedback">Please choose a username.</div>
                 </div>
               </div>
               <div class="col-md-6">
                 <label for="validationCustom03" class="form-label">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required placeholder="">
-                <div class="invalid-feedback">
-                  Please provide a valid city.
-                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom03"
+                  required
+                  placeholder=""
+                />
+                <div class="invalid-feedback">Please provide a valid city.</div>
               </div>
-            
+
               <div class="col-md-3">
                 <label for="validationCustom05" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required placeholder="">
-                <div class="invalid-feedback">
-                  Please provide a valid zip.
-                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom05"
+                  required
+                  placeholder=""
+                />
+                <div class="invalid-feedback">Please provide a valid zip.</div>
               </div>
               <div class="col-12">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required placeholder="">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    required
+                    placeholder=""
+                  />
                   <label class="form-check-label" for="invalidCheck">
                     Agree to terms and conditions
                   </label>
@@ -804,7 +851,9 @@
                 </div>
               </div>
               <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
+                <button class="btn btn-primary" type="submit">
+                  Submit form
+                </button>
               </div>
             </form>
           </div>
@@ -1084,7 +1133,7 @@
 
       <div class="container">
         <div class="accordion" id="accordionPanelsStayOpenExample ">
-          <div class="accordion-item accordionStye">
+          <div data-aos="fade-right" class="accordion-item accordionStye">
             <h2 class="accordion-header">
               <button
                 class="accordion-button"
@@ -1118,7 +1167,7 @@
             </div>
           </div>
 
-          <div class="accordion-item accordionStye">
+          <div data-aos="fade-left" class="accordion-item accordionStye">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -1152,7 +1201,7 @@
             </div>
           </div>
 
-          <div class="accordion-item accordionStye">
+          <div data-aos="fade-right" class="accordion-item accordionStye">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -1186,7 +1235,7 @@
             </div>
           </div>
 
-          <div class="accordion-item accordionStye">
+          <div data-aos="fade-left" class="accordion-item accordionStye">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -1220,7 +1269,7 @@
             </div>
           </div>
 
-          <div class="accordion-item accordionStye">
+          <div data-aos="fade-right" class="accordion-item accordionStye">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -1254,7 +1303,7 @@
             </div>
           </div>
 
-          <div class="accordion-item accordionStye">
+          <div data-aos="fade-left" class="accordion-item accordionStye">
             <h2 class="accordion-header">
               <button
                 class="accordion-button collapsed"
@@ -1293,7 +1342,10 @@
       <!-- question -->
 
       <section class="container">
-        <div class="company mt-5 pt-5 d-none d-lg-inline">
+        <div
+          data-aos="zoom-in-down"
+          class="company mt-5 pt-5 d-none d-lg-inline"
+        >
           <div class="text-center my-4 px-5">
             <p class="h1 fw-bold">220+ Companies Are Connected to Us</p>
           </div>
@@ -1301,22 +1353,27 @@
             class="company-log d-flex align-items-center justify-content-between"
           >
             <div>
-              <img class="" src="images/company/company-1.png" alt="" />
+              <img
+                class=""
+                src="images/company/company-1.png"
+                alt=""
+                loading="lazy"
+              />
             </div>
             <div>
-              <img src="images/company/company-2.png" alt="" />
+              <img src="images/company/company-2.png" alt="" loading="lazy" />
             </div>
             <div>
-              <img src="images/company/company-3.png" alt="" />
+              <img src="images/company/company-3.png" alt="" loading="lazy" />
             </div>
             <div>
-              <img src="images/company/company-4.png" alt="" />
+              <img src="images/company/company-4.png" alt="" loading="lazy" />
             </div>
             <div>
-              <img src="images/company/company-5.png" alt="" />
+              <img src="images/company/company-5.png" alt="" loading="lazy" />
             </div>
             <div>
-              <img src="images/company/company-6.png" alt="" />
+              <img src="images/company/company-6.png" alt="" loading="lazy" />
             </div>
           </div>
         </div>
@@ -1377,5 +1434,11 @@
 
     <!----------
               Link-Bootstrap -->
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- AOS -->
   </body>
 </html>
