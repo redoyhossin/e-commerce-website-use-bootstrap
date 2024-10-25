@@ -4,11 +4,43 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+/* Navbar-fixed  Start*/
+.Navbar-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 5;
+  background: linear-gradient(50deg, #135d66 50%, #9bbec8 50%, Transparent);
+  background-color: rgb(3, 3, 3);
+}
+
+.bg-ImgCover {
+  background: url(images/Bg-cover.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%;
+
+  height: 80vh;
+}
+/* Navbar-fixed  end*/
 
 /* captionCarousel Start*/
-.captionCarousel{
+.captionCarousel {
   margin-bottom: 10rem;
 }
+
+/* .carousel-style Start*/
+.carousel-style {
+  margin-top: -2.5rem;
+}
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+}
+/* .carousel-style End*/
+
 /* captionCarousel end*/
 
 /* Common Btn Start*/
@@ -228,35 +260,7 @@
 }
 
 /* Animation-button  End*/
-/* .carousel-style Start*/
-.carousel-style {
-  margin-top: -2.5rem;
-}
-/* .carousel-style End*/
-.carousel-item img {
-  height: 80vh;
-  object-fit: cover;
-}
-/* Navbar-fixed  Start*/
-.Navbar-fixed {
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  z-index: 5;
-  background: linear-gradient(50deg, #135d66 50%, #9bbec8 50%, Transparent);
-  background-color: rgb(3, 3, 3);
-}
 
-.bg-ImgCover {
-  background: url(images/Bg-cover.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60%;
-  /* width: 100%; */
-  height: 80vh;
-}
-/* Navbar-fixed  end*/
 /* RegisterBackground Start*/
 .RegisterBac {
   background-color: rgba(41, 38, 38, 0.185);
@@ -277,8 +281,6 @@
 
 /* Cards Animation Start*/
 
-
-
 .CardBox-Hed {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -286,10 +288,8 @@
 }
 
 .CardBox {
-  border-radius:16px;
+  border-radius: 16px;
   position: relative;
-
-
 }
 .CardBox img {
   width: 100%;
@@ -321,23 +321,23 @@
   height: 100%;
 }
 
-
 /* Cards Animation end */
 
-
-
-
-
-
-/* responsive Mobiles - Laptops*/
+/* responsive Mobiles-Tablets- Laptops*/
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  .Animation-Button {
-    width: 200px;
+  .bg-ImgCover {
+    background-position: 50%;
+    height: 45vh;
+  }
+  .carousel-item img {
+    height: 100%;
   }
   .carousel-caption {
-    margin: 0px;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
+  }
+  .Animation-Button {
+    width: 220px;
   }
 
   .RegisterBac {
@@ -347,6 +347,31 @@
     border-radius: 8px;
     border-top: rgb(0, 0, 0) 8px solid;
     border-left: none;
+  }
+
+  /* if you want AOS responsive  */
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: translate(0) scale(1) !important;
+  }
+  /* if you want AOS responsive  */
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .bg-ImgCover {
+    background-position: 50%;
+    height: 50vh;
+  }
+
+  .carousel-item img {
+    height: 100%;
+  }
+  .captionCarousel {
+    margin-bottom: 7rem;
+  }
+  .Animation-Button {
+    width: 250px;
   }
 
   /* if you want AOS responsive  */
