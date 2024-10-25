@@ -333,11 +333,12 @@
   .carousel-item img {
     height: 100%;
   }
+ 
   .carousel-caption {
-    margin-bottom: 2rem;
-  }
+    margin-bottom: -1rem;
+}
   .Animation-Button {
-    width: 220px;
+    width: 210px;
   }
 
   .RegisterBac {
